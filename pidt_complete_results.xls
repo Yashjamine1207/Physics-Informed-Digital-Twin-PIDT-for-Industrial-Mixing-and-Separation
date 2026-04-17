@@ -1,0 +1,16 @@
+Metric,Value Achieved,PDF Target,Status
+Output MSE (Overall %),0.0012,2.0,PASS
+Temperature MSE (%),0.002,2.0,PASS
+Composition MSE (%),0.0003,2.0,PASS
+LSTM Overall MSE (%),0.0022703025251757936,baseline,BASELINE
+Training Epochs (PINN),435.0,840,PASS
+Inference Latency (ms/sample),0.023,15.0,PASS
+Surrogate Throughput (eval/min),2572235.0,10000,PASS
+Energy Reduction (%),62.57,15.0,PASS
+Composition Variance at Optimal (%),0.09560000151395798,1.0,PASS
+PINN Fault Prediction Error (%),33.5673,min,PASS
+LSTM Fault Prediction Error (%),45.12,baseline,BASELINE
+SLSQP Iterations (single window),12.0,min,PASS
+PSO Iterations to SLSQP Quality,2.0,max,REFERENCE
+PSO vs SLSQP Speedup Factor,0.2,SLSQP wins,PASS
+Physics Violations Under Fault,0.0,0,PASS
