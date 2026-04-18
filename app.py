@@ -103,7 +103,7 @@ def build_lstm_functional():
 # ════════════════════════════════════════════════
 # PATHS
 # ════════════════════════════════════════════════
-ROOT    = r"C:\Users\Softmgmt\Desktop\MAIN_FOLDER\WHOLE_DATA\MACHINE_LEARNING_PROJECTS\PIDT"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 MDL_DIR = os.path.join(ROOT, 'streamlit_app', 'models')
 DAT_DIR = os.path.join(ROOT, 'streamlit_app', 'data')
 
@@ -112,7 +112,7 @@ DAT_DIR = os.path.join(ROOT, 'streamlit_app', 'data')
 # ════════════════════════════════════════════════
 @st.cache_resource(show_spinner="⚙️ Loading models...")
 def load_models():
-    ROOT    = r"C:\Users\Softmgmt\Desktop\MAIN_FOLDER\WHOLE_DATA\MACHINE_LEARNING_PROJECTS\PIDT"
+    ROOT = os.path.dirname(os.path.abspath(__file__))
     MDL_DIR = os.path.join(ROOT, 'streamlit_app', 'models')
 
     # ── PINN ──
